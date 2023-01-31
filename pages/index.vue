@@ -1,6 +1,7 @@
 <template>
   <div>
-    首页
+    <MainHeader/>
+    <MainContainer/>
   </div>
 </template>
 

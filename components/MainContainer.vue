@@ -1,11 +1,11 @@
 <template>
-    <div>
-        内容
-    </div>
+  <div>
+    内容
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'MainContainer'
+  name: 'MainContainer'
 }
 </script>

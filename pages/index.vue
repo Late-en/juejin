@@ -1,7 +1,18 @@
 <template>
   <div>
-    <MainHeader/>
-    <MainContainer/>
+    <!-- 公共头组件 -->
+    <MainHeader />
+    <!-- home页主体部分 -->
+    <div class="HomeBody">
+      <!-- 导航栏 -->
+      <HomeNav />
+      <div class="HomeContainer">
+        <!-- 文章列表 -->
+        <NuxtChild />
+        <!-- 边缘广告栏 -->
+        <HomeSide />
+      </div>
+    </div>
   </div>
 </template>
 

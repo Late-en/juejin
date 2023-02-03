@@ -1,11 +1,11 @@
 <template>
   <div>
-    顶部栏g
+    文章列表
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainHeader'
+  name: 'ArticleList'
 }
 </script>

@@ -1,11 +1,11 @@
 <template>
   <div>
-    内容
+    顶部栏
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainContainer'
+  name: 'MainHeader'
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <!-- 公共头组件 -->
     <MainHeader />
     <!-- home页主体部分 -->
@@ -21,3 +21,9 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style lang="scss" scoped>
+  .home{
+    font-size: 12px;
+  }
+</style>

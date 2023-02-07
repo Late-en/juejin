@@ -1,7 +1,9 @@
 <template>
   <div class="nav-view">
     <nav class="article-nav">
-      <NuxtLink v-for="(item,index) of ArticleNavList" :key="index" to= "\1" class="nav-item">{{item}}</NuxtLink>
+      <NuxtLink v-for="(item,index) of ArticleNavList" :key="index" to="\1" class="nav-item">
+        {{ item }}
+      </NuxtLink>
     </nav>
   </div>
 </template>
@@ -9,9 +11,9 @@
 <script>
 export default {
   name: 'HomeNav',
-  data(){
+  data () {
     return {
-      ArticleNavList:['综合','关注','后端','前端','Android','iOS','人工智能','开发工具','代码人生','阅读']
+      ArticleNavList: ['综合', '关注', '后端', '前端', 'Android', 'iOS', '人工智能', '开发工具', '代码人生', '阅读']
     }
   }
 }

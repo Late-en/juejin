@@ -1,26 +1,38 @@
 <template>
-    <div class="articleItem">
-        <div class="relativeInf">
-            <span class="author">author</span>
-            <span class="date">2天前</span>
-            <span class="lable">前端</span>
-        </div>
-        <div class="articleInf">
-            <h4 class="title">我是文章标题</h4>
-            <div class="content">这篇文章大概会招来一些居心叵测的人，但这可能是整个互联网技术社区从未有人分享过的真实情况。如果你觉得这篇文章可能对你的人生起到很积极的作用，请不要吝啬点赞和评论。</div>
-        </div>
-        <div class="interact">
-            <div class="watched"><img src="~/static/img/home/眼睛.svg" alt=""><span>2450</span></div>
-            <div class="agree"><img src="~/static/img/home/点赞.svg" alt=""><span>50</span></div>
-            <div class="discuss"><img src="~/static/img/home/对话框.svg" alt=""><span>2</span></div>
-        </div>
-        <div class="showImg"><img src="~/static/img/home/文章照片.jpg" alt=""></div>
+  <div class="articleItem">
+    <div class="relativeInf">
+      <span class="author">author</span>
+      <span class="date">2天前</span>
+      <span class="lable">前端</span>
     </div>
+    <div class="articleInf">
+      <h4 class="title">
+        我是文章标题
+      </h4>
+      <div class="content">
+        这篇文章大概会招来一些居心叵测的人，但这可能是整个互联网技术社区从未有人分享过的真实情况。如果你觉得这篇文章可能对你的人生起到很积极的作用，请不要吝啬点赞和评论。
+      </div>
+    </div>
+    <div class="interact">
+      <div class="watched">
+        <img src="~/static/img/home/眼睛.svg" alt=""><span>2450</span>
+      </div>
+      <div class="agree">
+        <img src="~/static/img/home/点赞.svg" alt=""><span>50</span>
+      </div>
+      <div class="discuss">
+        <img src="~/static/img/home/对话框.svg" alt=""><span>2</span>
+      </div>
+    </div>
+    <div class="showImg">
+      <img src="~/static/img/home/文章照片.jpg" alt="">
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'articleItem'
+  name: 'ArticleItem'
 }
 </script>
 

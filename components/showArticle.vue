@@ -1,16 +1,16 @@
 <template>
   <div class="showArticle">
-    <article-item></article-item>
-    <article-item></article-item>
-    <article-item></article-item>
-    <article-item></article-item>
+    <article-item />
+    <article-item />
+    <article-item />
+    <article-item />
     到底啦~
   </div>
 </template>
 
 <script>
 export default {
-  name: 'showArticle',
+  name: 'ShowArticle'
 }
 </script>
 

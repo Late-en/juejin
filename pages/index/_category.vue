@@ -1,6 +1,6 @@
 <template>
   <div class="showArticle">
-    <show-article></show-article>
+    <show-article />
   </div>
 </template>
 

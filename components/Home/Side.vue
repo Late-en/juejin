@@ -1,12 +1,12 @@
 <template>
-    <div class="rightBox">
-        我是右侧小框
-    </div>
+  <div class="rightBox">
+    我是右侧小框
+  </div>
 </template>
 
 <script>
-export default{
-    name:'HomeSide'
+export default {
+  name: 'HomeSide'
 }
 </script>
 

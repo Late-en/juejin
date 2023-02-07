@@ -7,7 +7,7 @@
       <nav class="header-nav">
         <div class="main-nav-list">
           <ul class="nav-list">
-            <MainHeaderItem v-for="(item,index) of HeaderItemList" :key="index" :HeaderItemName="item"></MainHeaderItem>
+            <MainHeaderItem v-for="(item,index) of headerItemList" :key="index" :header-item-name="item" />
             <!-- <li class="nav-item link-item">
               <a href="#" style="height: 40px;">
                 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0cb52d4a506e44aba88bc0f2e8a8b2b7~tplv-k3u1fbpfcp-zoom-1.image" alt="" style="max-width: 115px">
@@ -24,11 +24,11 @@
 <script>
 export default {
   name: 'MainHeader',
-  data(){
+  data () {
     return {
-      HeaderItemList: ['首页', '沸点', '课程', '直播', '活动', '竞赛', '商城', 'APP', '插件']
+      headerItemList: ['首页', '沸点', '课程', '直播', '活动', '竞赛', '商城', 'APP', '插件']
     }
-  },
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="nav-item link-item">
-    <a href="#">{{ HeaderItemName }}</a>
+    <a href="#">{{ headerItemName }}</a>
   </div>
 </template>
 
@@ -8,7 +8,10 @@
 export default {
   name: 'MainHeaderItem',
   props: {
-    HeaderItemName: ''
+    headerItemName: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
-  <div>
-    文章列表
+  <div class="navBar">
+    <nav-bar></nav-bar>
+    <!-- 顶部栏g -->
   </div>
 </template>
 
@@ -9,3 +10,11 @@ export default {
   name: 'ArticleList'
 }
 </script>
+<style lang='scss' scoped>
+// 设置导航栏样式
+.navBar {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(219, 219, 219);
+
+}
+</style>

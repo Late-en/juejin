@@ -169,7 +169,7 @@ html {
 }
 
 a:link:hover {
-    color: rgb(252, 150, 150) !important;
+    /* color: rgb(252, 150, 150) !important; */
     text-decoration: none;
 }
 

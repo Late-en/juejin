@@ -25,5 +25,12 @@ export default {
 <style lang="scss" scoped>
   .home{
     font-size: 12px;
+
+    .HomeContainer {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+    }
   }
 </style>

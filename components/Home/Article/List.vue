@@ -11,7 +11,6 @@
     <home-article-item />
     <home-article-item />
     <home-article-item />
-    <article-item />
     到底啦~
   </div>
 </template>

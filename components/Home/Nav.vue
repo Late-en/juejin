@@ -1,7 +1,7 @@
 <template>
   <div class="nav-view">
     <nav class="article-nav">
-      <NuxtLink v-for="(item,index) of ArticleNavList" :key="index" to="\1" class="nav-item">
+      <NuxtLink v-for="(item, index) of ArticleNavList" :key="index" to="\1" class="nav-item">
         {{ item }}
       </NuxtLink>
     </nav>
@@ -23,10 +23,10 @@ export default {
 .nav-view {
   height: 3.833rem;
   z-index: 100;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  // box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   background-color: #fff;
 
-  .article-nav{
+  .article-nav {
     max-width: 960px;
     height: 100%;
     margin: auto;

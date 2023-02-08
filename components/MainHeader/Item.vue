@@ -32,10 +32,11 @@ export default {
     height: 5rem;
     margin: 0 1rem;
     line-height: 5rem;
-  }
+    border-bottom: 2px solid transparent;
 
-  &:hover{
-    border-bottom: 2px solid #34a8eb;
+    &:hover{
+      border-bottom: 2px solid $juejin-blue;
+    }
   }
 }
 

@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'ArticleItem'
+  name: 'HomeArticleItem'
 }
 </script>
 
@@ -47,8 +47,7 @@ export default {
     text-align: center;
 
     &:hover {
-        color: #0070f3;
-
+        color: $juejin-blue;
     }
 
     img {

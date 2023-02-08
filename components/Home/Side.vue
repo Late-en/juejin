@@ -12,9 +12,9 @@ export default {
 
 <style lang="scss" scoped>
 .rightBox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $font-grey;
 }
 </style>

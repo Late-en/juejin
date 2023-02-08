@@ -1,17 +1,16 @@
 <template>
   <div class="showArticle">
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
-    <article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
     <article-item />
     到底啦~
   </div>
@@ -19,7 +18,7 @@
 
 <script>
 export default {
-  name: 'ShowArticle'
+  name: 'HomeArticleList'
 }
 </script>
 

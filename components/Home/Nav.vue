@@ -21,8 +21,11 @@ export default {
 
 <style lang="scss" scoped>
 .nav-view {
+  position: fixed;
+  top: 5rem;
   height: 3.833rem;
-  z-index: 100;
+  width: 100%;
+  z-index: 99;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   background-color: #fff;
 

@@ -12,12 +12,12 @@
           <a href="" class="link">
             <image src="../../static/img/home/user1.jpg" alt="NAkano_May的头像" class="avatar1" loading="lazy" />
             <div class="userInfo">
-              <a href="" class="username">
+              <a href="" class="userName">
                 <span class="name" style="max-width: 128px;">
                   Nakano_May
                 </span>
                 <span class="rank">
-                  <image src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png" alt="NAkano_May的头像" class="avatar" />
+                  <image src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png" alt="NAkano_May的头像" class="avatar2" />
                 </span>
               </a>
               <div class="position">
@@ -42,7 +42,7 @@
                   <image
                     src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
                     alt="NAkano_May的头像"
-                    class="avatar"
+                    class="avatar2"
                   />
                 </span>
               </a>
@@ -66,7 +66,7 @@
                   <image
                     src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
                     alt="NAkano_May的头像"
-                    class="avatar"
+                    class="avatar2"
                   />
                 </span>
               </a>
@@ -121,23 +121,47 @@ export default {
     display: flex;
     flex-direction: column;
     .link{
+      padding: 1rem 1.3rem;
       display: flex;
       align-items:center;
       line-height: 2rem;
       .avatar1{
         display: block;
-        width: 3.8rem;
-        height: 3.8rem;
+        width: .2rem;
+        height: .2rem;
         border-radius: 50%;
-        margin-right: 0.5rem;
+        margin-right: 6px;
         position: relative;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        ;
+        overflow-x: chipset;
+        overflow-y: chipset;
       }
       .userInfo{
-        overflow: hidden;
         display: block;
+        overflow: hidden;
+        .userName{
+          display: flex;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 3px;
+          font-size: 1.16rem;
+          font-weight: 400;
+          color: #333;
+          .name{
+            display: inline-block;
+            vertical-align: top;
+          }
+          .rank{
+            display: inline-flex;
+            align-items: center;
+            margin-left: 0.33rem;
+            vertical-align: middle;
+
+            image {
+                width: 35px;
+                height: 16px;
+              }
+          }
+        }
       }
     }
 

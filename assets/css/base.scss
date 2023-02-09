@@ -142,3 +142,37 @@ html {
         color: $font-grey;
     }
 }
+
+// 更改主题
+.theme-night {
+    background-color: rgba(63, 63, 63, 0.76) !important;
+    color: #fff;
+    // 文章item
+    .relativeInf {
+        // background-color: rgba(0, 0, 0, 0.699);
+        color: #b1afaf !important;
+    }
+    .articleInf .content {
+        color: #b1afaf;
+    }
+    // 首页导航栏
+    .container {
+        .header-nav {
+            .main-nav-list {
+                .nav-list {
+                    .mainHrederItem {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 文章导航栏
+    .article-nav {
+        .nav-item {
+            color: #fff;
+        }
+    }
+}

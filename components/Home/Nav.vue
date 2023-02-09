@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-view">
+  <div class="nav-view" :class="{'theme-night':$bus.isNight}">
     <nav class="article-nav">
       <NuxtLink v-for="(item,index) of ArticleNavList" :key="index" to="\1" class="nav-item">
         {{ item }}

@@ -1,5 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home" :class="{'theme-night':$bus.isNight}">
+    <img class="themeChange" src="~/static/img/changeTheme/太阳.svg" alt="" @click="changeTheme" v-show="!$bus.isNight">
+    <img class="themeChange" src="~/static/img/changeTheme/月亮 (1).svg" alt="" @click="changeTheme" v-show="$bus.isNight">
     <!-- 公共头组件 -->
     <MainHeader :class="{'hidden':isHidden, 'visable':!isHidden}" />
     <!-- home页主体部分 -->
@@ -38,6 +40,9 @@ export default {
       } else {
         this.isHidden = false
       }
+    },
+    changeTheme () {
+      this.$bus.isNight = !this.$bus.isNight;
     }
   }
 }
@@ -63,5 +68,13 @@ export default {
   .visable{
     transition: all .2s;
     transform: translateZ(0);
+  }
+  // 设置更换主题按钮样式
+  .themeChange{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 2rem; 
+    z-index: 99999;
   }
 </style>

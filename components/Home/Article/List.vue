@@ -23,10 +23,8 @@ export default {
 
 <style lang='scss' scoped>
   .showArticle {
-    margin-top: 10.17rem;
-    margin-right: 21.667rem;
     border-radius: 2px;
-    width: 700px;
+    // width: 700px;
     background-color: #fff;
   }
 </style>

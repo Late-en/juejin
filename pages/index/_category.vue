@@ -7,6 +7,9 @@
 <script>
 
 export default {
+  asyncData (context) {
+    // console.log(context.route.params.category)
+  }
 }
 </script>
 

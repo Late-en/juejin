@@ -15,6 +15,8 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: $font-grey;
+  background-color: #fff;
+  width: 20rem;
+  z-index: 1;
 }
 </style>

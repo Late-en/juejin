@@ -3,12 +3,15 @@
     <!-- 公共头组件 -->
     <MainHeader :class="{'hidden':isHidden, 'visable':!isHidden}" />
     <!-- home页主体部分 -->
-    <div class="HomeBody">
+    <div class="homeBody">
       <!-- 导航栏 -->
       <HomeNav :class="{'hidden':isHidden, 'visable':!isHidden}" />
-      <div class="HomeContainer">
-        <!-- 文章列表 -->
-        <NuxtChild />
+      <div class="homeContainer">
+        <div class="articleContainer">
+          <HomeArticleHeader />
+          <!-- 文章列表 -->
+          <NuxtChild />
+        </div>
         <!-- 边缘广告栏 -->
         <HomeSide />
       </div>
@@ -47,11 +50,17 @@ export default {
   .home{
     font-size: 12px;
 
-    .HomeContainer {
+    .homeContainer {
       position: relative;
       margin: 0 auto;
       width: 100%;
       max-width: 960px;
+
+      .articleContainer{
+        margin-top: 10.17rem;
+        margin-right: 21.667rem;
+        background-color: #fff;
+      }
     }
   }
 

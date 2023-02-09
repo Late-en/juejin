@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-item link-item">
+  <div class="navItem linkItem">
     <a href="#">{{ headerItemName }}</a>
     <span :class="{'tablead':tableadText !== ''}">{{ tableadText }}</span>
   </div>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.link-item {
+.linkItem {
   position: relative;
   padding: 0;
   height: 5rem;

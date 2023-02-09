@@ -1,9 +1,9 @@
 <template>
-  <div class="nav-view">
-    <nav class="article-nav">
-      <NuxtLink v-for="(item,index) of ArticleNavList" :key="index" to="\1" class="nav-item">
-        {{ item }}
-      </NuxtLink>
+  <div class="navView">
+    <nav class="articleNav">
+      <a v-for="(item,index) of articleNavList" :key="index" class="navItem" @click="getArticleList(item.route)">
+        {{ item.type }}
+      </a>
     </nav>
   </div>
 </template>
@@ -13,14 +13,37 @@ export default {
   name: 'HomeNav',
   data () {
     return {
-      ArticleNavList: ['综合', '关注', '后端', '前端', 'Android', 'iOS', '人工智能', '开发工具', '代码人生', '阅读']
+      articleNavList: [
+        { type: '综合', route: 'recommended' },
+        { type: '关注', route: 'following' },
+        { type: '后端', route: 'backend' },
+        { type: '前端', route: 'frontend' },
+        { type: 'Android', route: 'android' },
+        { type: 'iOS', route: 'ios' },
+        { type: '人工智能', route: 'ai' },
+        { type: '开发工具', route: 'freebie' },
+        { type: '代码人生', route: 'career' },
+        { type: '阅读', route: 'article' }
+      ]
+      // articleType: 'recommended',
+      // sort: ''
+    }
+  },
+  mounted () {
+    this.getArticleList('')
+  },
+  methods: {
+    getArticleList (route) {
+      this.$router.push({
+        path: `/${route}`
+      })
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.nav-view {
+.navView {
   position: fixed;
   top: 5rem;
   height: 3.833rem;
@@ -29,7 +52,7 @@ export default {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   background-color: #fff;
 
-  .article-nav{
+  .articleNav{
     max-width: 960px;
     height: 100%;
     margin: auto;
@@ -37,11 +60,11 @@ export default {
     align-items: center;
     line-height: 1;
 
-    .nav-item:first-child {
+    .navItem:first-child {
       padding: 0 1rem 0 0;
     }
 
-    .nav-item:hover {
+    .navItem:hover {
       color: #007fff;
     }
   }

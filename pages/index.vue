@@ -1,7 +1,7 @@
 <template>
   <div class="home" :class="{'theme-night':$bus.isNight}">
-    <img class="themeChange" src="~/static/img/changeTheme/太阳.svg" alt="" @click="changeTheme" v-show="!$bus.isNight">
-    <img class="themeChange" src="~/static/img/changeTheme/月亮 (1).svg" alt="" @click="changeTheme" v-show="$bus.isNight">
+    <img v-show="!$bus.isNight" class="themeChange" src="~/static/img/changeTheme/太阳.svg" alt="" @click="changeTheme">
+    <img v-show="$bus.isNight" class="themeChange" src="~/static/img/changeTheme/月亮 (1).svg" alt="" @click="changeTheme">
     <!-- 公共头组件 -->
     <MainHeader :class="{'hidden':isHidden, 'visable':!isHidden}" />
     <!-- home页主体部分 -->
@@ -36,6 +36,7 @@ export default {
     window.addEventListener('scroll', debounce(this.scrollHandler, 10))
   },
   methods: {
+    // 滚动到某个位置后隐藏/显示公用头组件
     scrollHandler () {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       if (scrollTop > 400) {
@@ -44,8 +45,9 @@ export default {
         this.isHidden = false
       }
     },
+    // 更改主题颜色
     changeTheme () {
-      this.$bus.isNight = !this.$bus.isNight;
+      this.$bus.isNight = !this.$bus.isNight
     }
   }
 }
@@ -53,6 +55,9 @@ export default {
 
 <style lang="scss" scoped>
   .home{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
     font-size: 12px;
 
     .homeContainer {
@@ -68,7 +73,7 @@ export default {
       }
     }
   }
-
+// 隐藏和显示样式
   .hidden {
     transition: all .2s;
     transform: translate3d(0,-5rem,0);
@@ -78,12 +83,13 @@ export default {
     transition: all .2s;
     transform: translateZ(0);
   }
+
   // 设置更换主题按钮样式
   .themeChange{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    height: 2rem; 
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 2rem;
     z-index: 99999;
   }
 </style>

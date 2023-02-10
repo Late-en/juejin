@@ -27,7 +27,6 @@ export default {
 <style lang='scss' scoped>
   .showArticle {
     border-radius: 2px;
-    // width: 700px;
     background-color: #fff;
   }
 </style>

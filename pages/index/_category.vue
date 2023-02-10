@@ -1,5 +1,5 @@
 <template>
-  <div class="showArticle">
+  <div class="articleList">
     <home-article-list />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 // 设置文章展示框样式
-.showArticle {
+.articleList {
   flex: 3;
 }
 </style>

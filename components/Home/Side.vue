@@ -10,14 +10,14 @@
       <div class="userList">
         <div class="item">
           <a href="" class="link">
-            <image src="../../static/img/home/user1.jpg" alt="NAkano_May的头像" class="avatar1" loading="lazy" />
+            <img src="https://p3-passport.byteimg.com/img/user-avatar/91ac9fa11eade880762f4f76cdb2cba0~100x100.awebp" alt="NAkano_May的头像" class="avatar1" loading="lazy">
             <div class="userInfo">
               <a href="" class="userName">
                 <span class="name" style="max-width: 128px;">
                   Nakano_May
                 </span>
                 <span class="rank">
-                  <image src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png" alt="NAkano_May的头像" class="avatar2" />
+                  <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png" alt="NAkano_May的头像" class="avatar2">
                 </span>
               </a>
               <div class="position">
@@ -28,22 +28,22 @@
         </div>
         <div class="item">
           <a href="" class="link">
-            <image
+            <img
               src="https://p3-passport.byteimg.com/img/user-avatar/91ac9fa11eade880762f4f76cdb2cba0~100x100.awebp"
               alt="NAkano_May的头像"
               class="avatar1"
-            />
+            >
             <div class="userInfo">
               <a href="" class="username">
                 <span class="name" style="max-width: 128px;">
                   Nakano_May
                 </span>
                 <span class="rank">
-                  <image
+                  <img
                     src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
                     alt="NAkano_May的头像"
                     class="avatar2"
-                  />
+                  >
                 </span>
               </a>
               <div class="position">java工程师</div>
@@ -52,32 +52,32 @@
         </div>
         <div class="item">
           <a href="" class="link">
-            <image
+            <img
               src="https://p3-passport.byteimg.com/img/user-avatar/91ac9fa11eade880762f4f76cdb2cba0~100x100.awebp"
               alt="NAkano_May的头像"
               class="avatar1"
-            />
+            >
             <div class="userInfo">
               <a href="" class="username">
                 <span class="name" style="max-width: 128px;">
                   Nakano_May
                 </span>
                 <span class="rank">
-                  <image
+                  <img
                     src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
                     alt="NAkano_May的头像"
                     class="avatar2"
-                  />
+                  >
                 </span>
               </a>
               <div class="position">java工程师</div>
             </div>
           </a>
         </div>
-        <a href="" class="item">
+        <a href="" class="items">
           <div class="more">
             <span class="bangdan">完整榜单</span>
-            <i class="icon" />
+            <i class="icon ion-chevron-right"> > </i>
           </div>
         </a>
       </div>
@@ -120,18 +120,20 @@ export default {
     align-items: center;
     display: flex;
     flex-direction: column;
+    &:hover {
+        background-color: rgba(221, 221, 221, 0.205);
+      }
     .link{
       padding: 1rem 1.3rem;
       display: flex;
       align-items:center;
       line-height: 2rem;
       .avatar1{
-        display: block;
-        width: .2rem;
-        height: .2rem;
+        flex:0 0 auto;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         margin-right: 6px;
-        position: relative;
         overflow-x: chipset;
         overflow-y: chipset;
       }
@@ -156,10 +158,6 @@ export default {
             margin-left: 0.33rem;
             vertical-align: middle;
 
-            image {
-                width: 35px;
-                height: 16px;
-              }
           }
         }
       }
@@ -174,9 +172,18 @@ export default {
     display: flex;
     border-top: 1px solid hsla(0, 0%, 59.2, .1);
     .bangdan{
-      margin: auto;
+      line-height: 3.5rem;
+      margin-left: 40%;
     }
-  }
+    i {
+      display: inline-block;
+      line-height: 3.5rem;
+    }
 
+}
+.rank img {
+  width: 35px;
+  height: 16px;
+}
 }
 </style>

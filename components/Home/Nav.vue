@@ -1,5 +1,5 @@
 <template>
-  <div class="navView">
+  <div class="navView" :class="{'theme-night':$bus.isNight}">
     <nav class="articleNav">
       <a v-for="(item,index) of articleNavList" :key="index" class="navItem" @click="getArticleList(item.route)">
         {{ item.type }}

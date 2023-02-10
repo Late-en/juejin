@@ -1,5 +1,5 @@
 <template>
-  <div class="main-header">
+  <div class="main-header" :class="{'theme-night':$bus.isNight}">
     <div class="container">
       <a href="/" class="logo">
         <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg" alt="" class="logo-img">
@@ -7,7 +7,7 @@
       <nav class="header-nav">
         <div class="main-nav-list">
           <ul class="nav-list">
-            <MainHeaderItem v-for="(item,index) of headerItemList" :key="index" :header-item-name="item.name" :tablead-text="item.tablead" />
+            <MainHeaderItem class="mainHrederItem" v-for="(item,index) of headerItemList" :key="index" :header-item-name="item.name" :tablead-text="item.tablead" />
             <!-- <li class="nav-item link-item">
               <a href="#" style="height: 40px;">
                 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0cb52d4a506e44aba88bc0f2e8a8b2b7~tplv-k3u1fbpfcp-zoom-1.image" alt="" style="max-width: 115px">

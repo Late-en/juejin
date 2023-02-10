@@ -1,5 +1,8 @@
 <template>
-  <div class="showArticle">
+  <div class="showArticle" :class="{'theme-night':$bus.isNight}">
+    <home-article-item />
+    <home-article-item />
+    <home-article-item />
     <home-article-item />
     <home-article-item />
     <home-article-item />

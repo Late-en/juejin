@@ -1,8 +1,9 @@
 import Vue from 'vue'
+
 Vue.prototype.$bus = new Vue({
-    data() {
-        return {
-            isNight: false
-        }
-    },
+  data () {
+    return {
+      isNight: false
+    }
+  }
 })

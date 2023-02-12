@@ -111,33 +111,27 @@ export default {
 }
 
 // 设置作者名和标签之间分割线
-.author::after {
-    content: '';
-    border: 1px solid #e2e1e1;
-    height: 60%;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    transform: translate(50%, -50%);
-}
-
-.date::after {
-    content: '';
-    border: 1px solid #e2e1e1;
-    height: 60%;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    transform: translate(50%, -50%);
+.date,.author {
+    &::after {
+        content: '';
+        height: 60%;
+        width: 1px;
+        background-color: #e2e1e1;
+        position: absolute;
+        right: 0.4rem;
+        top: 0.7rem;
+        transform: translate(50%, -50%);
+    }
 }
 
 // 设置下划线样式
 .articleItem::after {
     content: '';
+    height: 1px;
     width: 95%;
     position: absolute;
     bottom: 0;
-    border: 0.25px solid #f4f5f5;
+    background-color: #e2e1e1;
 }
 
 // 设置互动框样式

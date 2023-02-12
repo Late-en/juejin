@@ -145,9 +145,10 @@ html {
 
 // 更改主题
 .theme-night {
-    // #121212;
     background-color: #000;
+    color: #ffffffb3;
 
+    //背景部分
     .main-header,
     .navView,
     .listHeader,
@@ -157,37 +158,29 @@ html {
         background-color: #121212 !important;
     }
 
-    color: #fff;
-
-    // 文章item
-    .relativeInf {
-        // background-color: rgba(0, 0, 0, 0.699);
-        color: #b1afaf !important;
+    // border部分
+    .mainHrederItem a,
+    .article-nav .nav-item {
+        color: #ffffffb3;
     }
 
+    .main-header {
+        border-bottom: 1px solid #ffffffb3 !important;
+    }
+
+    .date,
+    .author,
+    .articleItem {
+        &::after {
+            background-color: #ffffffb3 !important;
+        }
+    }
+
+    // 字体部分
+    .userHeader,
+    .userName .name,
+    .relativeInf,
     .articleInf .content {
-        color: #b1afaf;
-    }
-
-    // 首页导航栏
-    .container {
-        .header-nav {
-            .main-nav-list {
-                .nav-list {
-                    .mainHrederItem {
-                        a {
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // 文章导航栏
-    .article-nav {
-        .nav-item {
-            color: #fff;
-        }
+        color: #b1afaf !important;
     }
 }
